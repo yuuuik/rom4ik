@@ -83,6 +83,13 @@
     border-bottom: 1px solid var(--line);
   }
   .row.hi { background: var(--blue-soft); }
+  .mell-row {
+    background: linear-gradient(90deg, #f3ecff, #fdeef8);
+    border-left: 4px solid #8b3fd6;
+  }
+  .mell-row .badge { color: #8b3fd6; -webkit-text-stroke-color: #8b3fd6; }
+  .mell-play { background: linear-gradient(90deg, #8b3fd6, #d6428f); }
+  .mell-play:hover { filter: brightness(1.08); }
   .row:last-child { border-radius: 0 0 10px 10px; }
   .cell { padding: 16px 14px; text-align: center; }
 
@@ -185,11 +192,11 @@
       <div class="cell feat">Live-дилеры, программа лояльности, поддержка 24/7 на русском</div>
       <div class="cell cta"><a class="play" href="#">Получить 50 FS</a></div>
     </div>
-    <div class="row hi">
+    <div class="row hi mell-row">
       <div class="cell brand"><span class="badge">Mellstroy</span></div>
       <div class="cell bonus">50 бесплатных вращений за регистрацию</div>
       <div class="cell feat">Колесо удачи, live-казино, спортивные ставки</div>
-      <div class="cell cta"><a class="play" href="#">Забрать бонус</a></div>
+      <div class="cell cta"><a class="play mell-play" href="#">Забрать бонус</a></div>
     </div>
     <div class="row ">
       <div class="cell brand"><span class="badge">JoyCasino</span></div>
