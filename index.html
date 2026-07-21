@@ -31,22 +31,30 @@
   .brand { color: #fff; font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; }
   .brand .crown { color: var(--gold); }
   .tg-banner {
-    display: block;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    height: 40px;
     background: linear-gradient(90deg, #2aa9e0, #229ed9);
     color: #fff;
     text-decoration: none;
     text-align: center;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.88rem;
     letter-spacing: -0.005em;
-    padding: 14px 20px;
+    border-radius: 8px;
   }
   .tg-banner:hover { filter: brightness(1.06); }
 
+  @media (max-width: 700px) {
+    nav .wrap { flex-wrap: wrap; height: auto; padding-top: 12px; padding-bottom: 12px; gap: 10px; }
+    .tg-banner { flex-basis: 100%; margin-left: 0; }
+  }
   @media (max-width: 480px) {
-    nav .wrap { height: 56px; }
     .brand { font-size: 1rem; }
-    .tg-banner { font-size: 0.86rem; padding: 12px 14px; }
+    .tg-banner { font-size: 0.82rem; height: 38px; }
     .hero { padding: 26px 0 18px; }
     .hero h1 { font-size: 1.5rem; }
   }
@@ -152,10 +160,9 @@
 <nav>
   <div class="wrap">
     <div class="brand"><span class="crown">♛</span>BonusRank</div>
+    <a class="tg-banner" href="#">Получить плюшки в нашем телеграм канале</a>
   </div>
 </nav>
-
-<a class="tg-banner" href="#">Получить плюшки в нашем телеграм канале</a>
 
 <section class="hero">
   <div class="wrap">
