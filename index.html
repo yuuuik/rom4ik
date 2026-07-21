@@ -87,29 +87,31 @@
   .persona-big {
     position: absolute;
     left: 100%;
-    top: 0;
-    height: 100%;
-    width: 180px;
-    margin-left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    margin-left: 0;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 4px;
   }
   .persona-big img {
     width: 100%;
+    max-height: 220px;
     object-fit: contain;
   }
   .persona-big span {
     font-family: Georgia, 'Segoe UI', Arial, sans-serif;
     font-weight: 900;
     font-style: italic;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     letter-spacing: -0.02em;
     transform: skewX(-6deg);
     color: var(--blue);
     text-align: center;
+    line-height: 1.1;
   }
   @media (max-width: 1320px) {
     .persona-big { display: none; }
