@@ -30,15 +30,23 @@
   nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .brand { color: #fff; font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; }
   .brand .crown { color: var(--gold); }
-  .nav-links { display: flex; gap: 4px; }
-  .nav-links span {
-    color: #c7d2e3; font-size: 0.8rem; font-weight: 700;
-    padding: 8px 12px; border-radius: 6px;
+  .tg-banner {
+    display: block;
+    background: linear-gradient(90deg, #2aa9e0, #229ed9);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.005em;
+    padding: 14px 20px;
   }
-  @media (max-width: 900px) { .nav-links { display: none; } }
+  .tg-banner:hover { filter: brightness(1.06); }
+
   @media (max-width: 480px) {
     nav .wrap { height: 56px; }
     .brand { font-size: 1rem; }
+    .tg-banner { font-size: 0.86rem; padding: 12px 14px; }
     .hero { padding: 26px 0 18px; }
     .hero h1 { font-size: 1.5rem; }
   }
@@ -144,9 +152,10 @@
 <nav>
   <div class="wrap">
     <div class="brand"><span class="crown">♛</span>BonusRank</div>
-    <div class="nav-links"><span>Лучшие бонусы</span><span>Без депозита</span><span>Быстрый вывод</span><span>Фриспины</span><span>Мобильная версия</span></div>
   </div>
 </nav>
+
+<a class="tg-banner" href="#">Получить плюшки в нашем телеграм канале</a>
 
 <section class="hero">
   <div class="wrap">
