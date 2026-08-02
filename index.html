@@ -141,6 +141,11 @@
   .foot-top{ display:grid; grid-template-columns:1fr auto; gap:2.5rem; align-items:center; padding:3rem 0 2.4rem; }
   .foot-title{ font-family:var(--disp); font-weight:800; text-transform:uppercase; letter-spacing:-.015em;
     font-size:clamp(1.8rem,6vw,3.4rem); line-height:1; overflow-wrap:anywhere; }
+  .foot-cta{ display:inline-flex; align-items:center; gap:.5rem; text-decoration:none; color:#ff3b3b;
+    animation:foot-blink 1.4s ease-in-out infinite; }
+  .foot-cta .arr{ color:#ff3b3b; }
+  @keyframes foot-blink{ 0%,100%{ opacity:1; } 50%{ opacity:.35; } }
+  @media (prefers-reduced-motion:reduce){ .foot-cta{ animation:none; } }
   .foot-top .tg-banner{ width:min(480px,80vw); margin:0; }
   @media (max-width:780px){ .foot-top{ grid-template-columns:1fr; } }
 
@@ -315,7 +320,7 @@
 
 <footer>
   <div class="wrap foot-top">
-    <div class="foot-title">Бонусы<br>каждую неделю</div>
+    <a class="foot-title foot-cta" href="https://t.me/nococu_y_mpakmopucma" target="_blank" rel="noopener noreferrer">ВЕСЬ ДВИЖ ТУТ <span class="arr">→</span></a>
     <a class="tg-banner" href="https://t.me/nococu_y_mpakmopucma" target="_blank" rel="noopener noreferrer">
       <img src="assets/tg-banner.jpg" alt="Ништяки в TG">
     </a>
