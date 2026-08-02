@@ -44,14 +44,14 @@
   .kicker{ font-family:var(--mono); font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); }
 
   .hero{ display:flex; align-items:center; justify-content:center;
-    text-align:center; padding:clamp(2.5rem,7vh,5rem) 0 clamp(1.2rem,2.5vh,1.8rem); }
+    text-align:center; padding:clamp(2.5rem,7vh,5rem) 0 clamp(2rem,5vh,3.5rem); }
   .tg-banner{ display:block; width:min(560px,90%); margin:2.2rem auto 0; border-radius:16px; overflow:hidden; line-height:0;
-    border:1px solid rgba(255,255,255,.14);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 22px 44px -26px rgba(0,0,0,.75);
+    border:1px solid rgba(140,255,170,.35);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 0 26px rgba(120,255,160,.35), 0 22px 44px -26px rgba(0,0,0,.75);
     transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
   .tg-banner img{ display:block; width:100%; height:auto; }
-  .tg-banner:hover{ transform:translateY(-2px); border-color:rgba(201,123,255,.42);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.32), 0 30px 64px -24px rgba(80,20,160,.75); }
+  .tg-banner:hover{ transform:translateY(-2px); border-color:rgba(140,255,170,.55);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.32), 0 0 38px rgba(120,255,160,.5), 0 30px 64px -24px rgba(80,20,160,.75); }
   .hero-lockup{ display:flex; flex-direction:column; align-items:center; gap:clamp(1rem,2.6vh,1.6rem); width:100%; }
   .hero-text{ display:flex; flex-direction:column; align-items:center; gap:clamp(.7rem,2vh,1.3rem); max-width:100%; }
   .hero-text .kicker{ display:inline-flex; align-items:center; gap:.7rem; }
@@ -64,8 +64,9 @@
     animation:chrome 9s linear infinite; filter:drop-shadow(0 10px 40px rgba(120,25,200,.5));
   }
   @keyframes chrome{ to{ background-position:280% 0; } }
+  .hero-sub{ color:var(--dim); font-size:.98rem; max-width:34rem; }
 
-  section.block{ padding:1.5rem 0 4.5rem; scroll-margin-top:5rem; }
+  section.block{ padding:2.5rem 0 4.5rem; scroll-margin-top:5rem; }
 
   .grid{ display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
   .grid .card{ flex:1 1 300px; max-width:380px; }
@@ -115,9 +116,11 @@
     box-shadow:0 18px 36px -14px rgba(150,60,220,.85); }
 
   footer{ margin-top:4rem; border-top:1px solid var(--hair-2); }
-  .foot-top{ padding:3rem 0 2.4rem; }
+  .foot-top{ display:grid; grid-template-columns:1fr auto; gap:2.5rem; align-items:center; padding:3rem 0 2.4rem; }
   .foot-title{ font-family:var(--disp); font-weight:800; text-transform:uppercase; letter-spacing:-.015em;
     font-size:clamp(1.8rem,6vw,3.4rem); line-height:1; overflow-wrap:anywhere; }
+  .foot-top .tg-banner{ width:min(320px,80vw); margin:0; }
+  @media (max-width:780px){ .foot-top{ grid-template-columns:1fr; } }
 
   @media (prefers-reduced-motion:reduce){ *{ animation:none !important; scroll-behavior:auto; } .card{ opacity:1; transform:none; } .wordmark{ background-position:0 0; } }
 </style>
@@ -135,10 +138,8 @@
       <div class="hero-text">
         <div class="kicker">Рейтинг 2026</div>
         <h1 class="wordmark">Топ казино<br>с бонусом</h1>
+        <p class="hero-sub">Проверенные площадки, живые бонусы за регистрацию, без скрытых условий</p>
       </div>
-      <a class="tg-banner" href="https://t.me/nococu_y_mpakmopucma" target="_blank" rel="noopener noreferrer">
-        <img src="assets/tg-banner.jpg" alt="Ништяки в TG">
-      </a>
     </div>
   </section>
 
@@ -168,7 +169,7 @@
         </div>
         <div class="desc">Колесо удачи, live-казино, спортивные ставки</div>
         <div class="bonus-label">Бонус</div>
-        <div class="bonus-line">50 бесплатных вращений за регистрацию</div>
+        <div class="bonus-line">85 бесплатных вращений за регистрацию</div>
         <div class="card-rule"></div>
         <a class="cta-wide" href="https://mell675.com/?open=register&p=ovpl" target="_blank" rel="noopener noreferrer">Зарегистрироваться <span class="arr">→</span></a>
       </div>
@@ -182,7 +183,7 @@
         </div>
         <div class="desc">Быстрая верификация, лотереи, колесо фортуны</div>
         <div class="bonus-label">Бонус</div>
-        <div class="bonus-line">50 бесплатных вращений за регистрацию</div>
+        <div class="bonus-line">70 бесплатных вращений за регистрацию</div>
         <div class="card-rule"></div>
         <a class="cta-wide" href="https://fortuna-promo1.com/alt/playfortuna/registration?cdf7d86c3d9f59f3bdfe2bc61888d912" target="_blank" rel="noopener noreferrer">Забрать бонус <span class="arr">→</span></a>
       </div>
@@ -196,7 +197,7 @@
         </div>
         <div class="desc">Live-дилеры, программа лояльности, поддержка 24/7 на русском</div>
         <div class="bonus-label">Бонус</div>
-        <div class="bonus-line">50 бесплатных вращений за регистрацию</div>
+        <div class="bonus-line">65 бесплатных вращений за регистрацию</div>
         <div class="card-rule"></div>
         <a class="cta-wide" href="https://one-vv8130.com/casino/list?open=register&p=vy6r" target="_blank" rel="noopener noreferrer">Получить фри спины <span class="arr">→</span></a>
       </div>
@@ -210,7 +211,7 @@
         </div>
         <div class="desc">Настольные игры, турниры баккары</div>
         <div class="bonus-label">Бонус</div>
-        <div class="bonus-line">50 бесплатных вращений за регистрацию</div>
+        <div class="bonus-line">55 бесплатных вращений за регистрацию</div>
         <div class="card-rule"></div>
         <a class="cta-wide" href="https://booi-promo.com/alt/booi/sign-up?d4627489073bf368961f6308de12e654" target="_blank" rel="noopener noreferrer">Получить бонус <span class="arr">→</span></a>
       </div>
@@ -238,7 +239,7 @@
         </div>
         <div class="desc">Ночные турниры, мобильная версия</div>
         <div class="bonus-label">Бонус</div>
-        <div class="bonus-line">30 бесплатных вращений за регистрацию</div>
+        <div class="bonus-line">40 бесплатных вращений за регистрацию</div>
         <div class="card-rule"></div>
         <a class="cta-wide" href="https://jozz-promo1.com/alt/jozz/registration?37fa7fc051b0e5cce661cf029caba1c9" target="_blank" rel="noopener noreferrer">Зарегистрироваться <span class="arr">→</span></a>
       </div>
@@ -252,7 +253,7 @@
         </div>
         <div class="desc">Рулетка live, еженедельные акции</div>
         <div class="bonus-label">Бонус</div>
-        <div class="bonus-line">30 бесплатных вращений за регистрацию</div>
+        <div class="bonus-line">35 бесплатных вращений за регистрацию</div>
         <div class="card-rule"></div>
         <a class="cta-wide" href="https://1414.gameshere.xyz/ru/registration2?partner=p1414p7666pa27d" target="_blank" rel="noopener noreferrer">Получить бонус <span class="arr">→</span></a>
       </div>
@@ -266,7 +267,7 @@
         </div>
         <div class="desc">Широкая линейка слотов, промокоды</div>
         <div class="bonus-label">Бонус</div>
-        <div class="bonus-line">25 бесплатных вращений за регистрацию</div>
+        <div class="bonus-line">30 бесплатных вращений за регистрацию</div>
         <div class="card-rule"></div>
         <a class="cta-wide" href="https://winity.one/alt/winity/sign-up?32fcae8d1ebc1fd318ce451902f4d623" target="_blank" rel="noopener noreferrer">Забрать бонус <span class="arr">→</span></a>
       </div>
@@ -293,6 +294,9 @@
 <footer>
   <div class="wrap foot-top">
     <div class="foot-title">Бонусы<br>каждую неделю</div>
+    <a class="tg-banner" href="https://t.me/nococu_y_mpakmopucma" target="_blank" rel="noopener noreferrer">
+      <img src="assets/tg-banner.jpg" alt="Ништяки в TG">
+    </a>
   </div>
 </footer>
 
